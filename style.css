@@ -1,6 +1,22 @@
-div {
+.a {
   background-color: red;
-  height: 90px;
-  width : 90px;
-  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.aa {
+  background-color: #0000ff;
+  flex : 2;
+  color: white;
+}
+
+.ab {
+  background-color: green;
+  flex : 2;
+}
+
+.ac {
+  background-color: yellow;
+  flex: 2;
 }
