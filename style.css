@@ -1,22 +1,5 @@
-.a {
+div {
   background-color: red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.aa {
-  background-color: #0000ff;
-  flex : 2;
-  color: white;
-}
-
-.ab {
-  background-color: green;
-  flex : 2;
-}
-
-.ac {
-  background-color: yellow;
-  flex: 2;
+  width: 100px;
+  height: 100px;
 }
