@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
   <script src="app.js" defer></script>
 </head>
 <body>
-  <div>
-    <a href="index2.html">hu</a>
-  </div>
+  <h1>College Finder</h1>
+  <label for="country">Enter country : </label>
+  <input type="text" id="country" name="search" placeholder="Enter country">
+  <button id="search">Search</button>
+  <br />
+  <table  id="list"></table>
 </body>
 </html>

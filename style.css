@@ -3,3 +3,7 @@ div {
   width: 100px;
   height: 100px;
 }
+
+th, td {
+  border: 1px solid black;
+}
