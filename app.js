@@ -151,7 +151,6 @@ async function getCol(country) {
 
 function print(data) {
   for(let i = 0; i < data.length; i++) {
-    console.log(data[i].name, data[i].web_pages[0]);
     let tr = document.createElement("tr");
     tr.innerHTML = `
     <td>
