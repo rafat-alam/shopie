@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  },
+  "name": "shopie",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafat-alam/shopie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafat-alam/shopie/issues"
+  },
+  "homepage": "https://github.com/rafat-alam/shopie#readme",
+  "devDependencies": {},
+  "description": ""
+}

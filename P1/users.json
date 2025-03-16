@@ -1,0 +1,10 @@
+{
+  "rafat": { "likes": 10, "followers": 50, "following": 30 },
+  "shubham": { "likes": 25, "followers": 80, "following": 60 },
+  "radhey": { "likes": 5, "followers": 20, "following": 15 },
+  "sanskar": { "likes": 15, "followers": 60, "following": 45 },
+  "yash": { "likes": 8, "followers": 40, "following": 25 },
+  "dev": { "likes": 20, "followers": 90, "following": 70 },
+  "prem": { "likes": 12, "followers": 55, "following": 40 },
+  "utkarsh": { "likes": 12, "followers": 55, "following": 40 }
+}

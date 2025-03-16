@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js" defer></script>
+  <script src="update.js" defer></script>
+</head>
+<body>
+  <h3>Your username : <i><%= user %></i></h3>
+  <br />
+  <div>
+    <% for(let i=0; i< message.length; i++) { %>
+      <div>
+        <% let msg = message[i]; %>
+        <h4>@<%= msg.user %></h4>
+        <p><%= msg.content %></p>
+      </div>
+    <% } %>
+  </div>
+  <br />
+  <label for="m-text-box">Your Message : </label>
+  <br />
+  <textarea id="m-text-box" name="msg" placeholder="Enter your message"></textarea>
+  <br />
+  <input type="submit" name="submit" value="send" id="m-submit"/>
+</body>
+</html>
