@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js" defer></script>
+  <style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h3>Your username : <i><%= user1 %></i></h3>
+  <h3>Friend username : <i><%= user2 %></i></h3>
+  <br />
+  <table>
+    <tr style="display: none;">
+      <th colspan="3">Session ID : <i id="curr-session"><%= session %></i></th>
+    </tr>
+    <tr>
+      <th>ID of Sender</th>
+      <th>Message</th>
+      <th>Edit</th>
+      <th>Date and Time</th>
+      <th>Delete</th>
+    </tr>
+    <% for(let i=0; i< result.length; i++) { %>
+      <tr>
+          <td><%= result[i].id1 %></td>
+          <td><%= result[i].msg %></td>
+          <td>
+            <% if(user1 == result[i].id1) { %>
+                <input type="button" class="edit-msg edit-delete-msg" value="Edit" id="<%= result[i].uuid %>">
+            <% } else { %>
+                &#10060;
+            <% } %>
+          </td>
+          <td><%= result[i].created %></td>
+          <td>
+            <% if(user1 == result[i].id1) { %>
+                <input type="button" class="delete-msg edit-delete-msg" value="Delete" id="<%= result[i].uuid %>">
+            <% } else { %>
+                &#10060;
+            <% } %>
+          </td>
+      </tr>
+    <% } %>
+  </table>
+  <br />
+  <label for="m-text-box">Your Message : </label>
+  <br />
+  <textarea id="m-text-box" name="msg" placeholder="Enter your message"></textarea>
+  <br />
+  <input type="submit" name="submit" value="send" id="m-send"/>
+</body>
+</html>
